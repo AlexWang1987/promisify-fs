@@ -1,6 +1,6 @@
 {
   "name": "promisify-fs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a 'fs' promising wrapper for file operations which contains various fs-related common tasks. it will make your code more concise and neat.",
   "main": "index.js",
   "directories": {
