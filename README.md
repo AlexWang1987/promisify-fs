@@ -1,7 +1,7 @@
 # promisify-fs
 This is a 'fs' promising wrapper for file operations which contains various fs-related common tasks. it will make your code more concise and neat.
 
-`promisify-fs` aims to make file operation more intuitive. in addition, to make code more concise and neat. all methods are constructed by following promising ways.
+`promisify-fs` aims to make file operation more intuitive. in addition, to make code more concise and neat. All methods are constructed by following promising way.
 
 # Usage
 ```javascript
@@ -17,7 +17,8 @@ fs
     console.error(e);
   })
 
-//many options in stat, please refer to https://npm.taobao.org/mirrors/node/latest/docs/api/fs.html#fs_class_fs_stats
+//many options in stat, please refer to
+//https://nodejs.org/api/fs.html#fs_class_fs_stats
 
 fs
   .existsFolder('../node_modules')
