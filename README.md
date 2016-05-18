@@ -36,7 +36,7 @@ fs
 * fileExists(file_path)
 * folderExists(file_path)
 * readFile(file[, options])
-* writeFile((file_path, data[, options])
+* writeFile((file_path, data[, options]) //if data is neither Buffer or String, JSON.stringify will be applied.
 *
 
 continuing...
