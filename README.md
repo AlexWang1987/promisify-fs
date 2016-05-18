@@ -8,7 +8,7 @@ This is a 'fs' promising wrapper for file operations which contains various fs-r
 var fs = require('promisify-fs');
 
 fs
-  .existsFile('../index.js')
+  .fileExists('../index.js')
   .then(function(stat){
     console.log(stat.abs_path);
     console.log(stat.size)
@@ -21,7 +21,7 @@ fs
 //https://nodejs.org/api/fs.html#fs_class_fs_stats
 
 fs
-  .existsFolder('../node_modules')
+  .folderExists('../node_modules')
   .then(function(abs_path){
     console.log(abs_path);
   })
@@ -33,8 +33,8 @@ fs
 ```
 
 # API
-* existsFile(file_path)
-* existsFolder(file_path)
+* fileExists(file_path)
+* folderExists(file_path)
 * readFile(file[, options])
 * writeFile((file_path, data[, options])
 *
