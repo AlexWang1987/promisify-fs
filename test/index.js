@@ -1,7 +1,7 @@
 var pfs = require('../index.js');
 
 pfs
-  .writeFile('../READM1E.md','dsfjlsd')
+  .fileExists('../READM1E2.md')
   .then(function (fi){
     console.log(fi);
   })
