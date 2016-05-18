@@ -41,4 +41,4 @@ fs
 
 continuing...
 
-If you want to have all asynchronous methods relating file, please refer to [bluebird](http://bluebirdjs.com/docs/api/promise.promisifyall.html) library.
+If you want to have all asynchronous methods operating file, please refer to [bluebird](http://bluebirdjs.com/docs/api/promise.promisifyall.html) library.
