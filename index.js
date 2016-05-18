@@ -22,6 +22,9 @@ pfs.fileExists = function(file_path) {
         return stat
       }
     })
+    .catch(function(e) {
+      console.log(e);
+    })
 }
 
 pfs.folderExists = function(file_path) {
@@ -34,6 +37,9 @@ pfs.folderExists = function(file_path) {
         return stat
       }
     })
+    .catch(function(e) {
+      console.log(e);
+    })
 }
 
 pfs.readFile = function(file_path, options) {
@@ -41,8 +47,11 @@ pfs.readFile = function(file_path, options) {
   options['encoding'] = options['encoding'] || 'utf8';
 
   return Promise.fromCallback(function(node_cb) {
-    fs.readFile(file_path, options, node_cb)
-  })
+      fs.readFile(file_path, options, node_cb)
+    })
+    .catch(function(e) {
+      console.log(e);
+    })
 }
 
 pfs.writeFile = function(file_path, data, options) {
@@ -50,10 +59,13 @@ pfs.writeFile = function(file_path, data, options) {
   options['encoding'] = options['encoding'] || 'utf8';
 
   return Promise.fromCallback(function(node_cb) {
-    //try to stringify
-    if(!~['String', 'Buffer'].indexOf(data.constructor.name)) {
-      data = JSON.stringify(data, options.replacer || null, options.space || null);
-    }
-    fs.writeFile(file_path, data, options, node_cb)
-  })
+      //try to stringify
+      if(!~['String', 'Buffer'].indexOf(data.constructor.name)) {
+        data = JSON.stringify(data, options.replacer || null, options.space || null);
+      }
+      fs.writeFile(file_path, data, options, node_cb)
+    })
+    .catch(function(e) {
+      console.log(e);
+    })
 }

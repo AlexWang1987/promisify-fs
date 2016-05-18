@@ -1,10 +1,10 @@
 var pfs = require('../index.js');
 
 pfs
-  .writeFile('../README1.md','test data')
+  .writeFile('../READM1E.md','dsfjlsd')
   .then(function (fi){
     console.log(fi);
   })
   .catch(function(e) {
-    console.log(e);
+    console.log('---->',e);
   })
