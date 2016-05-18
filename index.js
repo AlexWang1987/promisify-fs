@@ -44,6 +44,10 @@ pfs.writeFile = function(file_path, data, options) {
   options['encoding'] = options['encoding'] || 'utf8';
 
   return Promise.fromCallback(function(node_cb) {
+    //try to stringify
+    if(! ~['String','Buffer'].indexOf(data.constructor.name)){
+      data = JSON.stringify(data);
+    }
     fs.writeFile(file_path, data, options, node_cb)
   })
 }
