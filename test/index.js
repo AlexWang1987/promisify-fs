@@ -1,7 +1,7 @@
 var pfs = require('../index.js');
 
 pfs
-  .writeFile('../inde1x.js')
+  .writeFile('../inde1x.js','sd')
   .then(function(fi) {
     console.log('e',fi);
   })

@@ -96,12 +96,12 @@ pfs.writeFile = function(file_path, data, options) {
   options['encoding'] = options['encoding'] || 'utf8';
 
   return Promise.try(function() {
-      if(! (file_path && data)){
+      if(!(file_path && data)) {
         throw '<file_path> , <data> are not all assigned.'
       }
     })
     .then(function(d) {
-      Promise.fromCallback(function(node_cb) {
+      return Promise.fromCallback(function(node_cb) {
         //try to stringify
         if(!~['String', 'Buffer'].indexOf(data.constructor.name)) {
           data = JSON.stringify(data, options.replacer || null, options.space || null);
