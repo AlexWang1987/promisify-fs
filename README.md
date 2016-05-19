@@ -1,7 +1,7 @@
 # promisify-fs
-This is a 'fs' promising wrapper for file operations which contains various fs-related common tasks. it will make your code more concise and neat.
+This is a 'fs' promising wrapper for file operations which contains various fs-related common tasks. it will make your code more concise, neat and efficient.
 
-`promisify-fs` aims to make file operation more intuitive. in addition, to make code more concise and neat. All methods are constructed by following promising way.
+`promisify-fs` aims to make file operation more intuitive. In addition, to make code more concise and neat. All methods are constructed by following promising way.
 
 # Usage
 ```javascript
@@ -38,6 +38,7 @@ fs
     console.log('---->', e);
   })
 
+
 fs
   .writeFile('../inde1x.js')
   .then(function(fi) {
@@ -47,9 +48,11 @@ fs
     console.log('---->', e);
   })
 
+
 ```
 
 # API
+
 * fileExists(file_path)
 * folderExists(file_path)
 * readFile(file[, options])
