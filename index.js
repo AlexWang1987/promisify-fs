@@ -5,6 +5,7 @@ var Promise = require('bluebird');
 var fs = require('fs');
 var path = require('path');
 
+
 /**
  * expose promisified fs
  */
@@ -90,6 +91,7 @@ pfs.readFile = function(file_path, options) {
  * @param  {[type]} options   more options, please refer to https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback
  * @return promise
  */
+
 pfs.writeFile = function(file_path, data, options) {
   var options = options || {};
   options['encoding'] = options['encoding'] || 'utf8';
@@ -99,6 +101,9 @@ pfs.writeFile = function(file_path, data, options) {
       if(!~['String', 'Buffer'].indexOf(data.constructor.name)) {
         data = JSON.stringify(data, options.replacer || null, options.space || null);
       }
+
       fs.writeFile(file_path, data, options, node_cb)
     })
 }
+
+
