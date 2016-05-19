@@ -6,7 +6,9 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "promisify-bash": "^1.0.2"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "node ./test/index.js"

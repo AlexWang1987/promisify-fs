@@ -4,6 +4,7 @@
 var Promise = require('bluebird');
 var fs = require('fs');
 var path = require('path');
+var bash = require('promisify-bash');
 
 /**
  * expose promisified fs
@@ -29,28 +30,28 @@ pfs.fileExists = function(file_path) {
       return null
     })
     .error(function(e) {
-      if(e.code !== 'ENOENT') {
-        //other potential erros, needed to be exposed out
-        throw e.cause
+      if(e.code == 'ENOENT') {
+        //file does not exist
+        return null
       }
 
-      //file does not exist
-      return null
+      //other potential erros, needed to be exposed out
+      throw e.cause
     })
 }
 
 /**
- * The file specified by `file_path` must be exactly folder
- * @param  string file_path file path
+ * The file specified by `folder_path` must be exactly folder
+ * @param  string folder_path file path
  * @return promise          promise
  */
-pfs.folderExists = function(file_path) {
+pfs.folderExists = function(folder_path) {
   return Promise.fromCallback(function(node_cb) {
-      fs.stat(file_path, node_cb)
+      fs.stat(folder_path, node_cb)
     })
     .then(function(stat) {
       if(stat.isDirectory()) {
-        if(file_path[0] == '.') stat['abs_path'] = path.resolve(file_path)
+        if(folder_path[0] == '.') stat['abs_path'] = path.resolve(folder_path)
         return stat
       }
 
@@ -58,13 +59,13 @@ pfs.folderExists = function(file_path) {
       return null
     })
     .error(function(e) {
-      if(e.code !== 'ENOENT') {
-        //other potential erros, needed to be exposed out
-        throw e.cause
+      //folder does not exist
+      if(e.code == 'ENOENT') {
+        return null
       }
 
-      //folder does not exist
-      return null
+      //other potential erros, needed to be exposed out
+      throw e.cause
     })
 }
 
@@ -86,8 +87,8 @@ pfs.readFile = function(file_path, options) {
 /**
  * Write data with `string` `buffer` `object` type to a file, it will override former file, so be cautious to verify if it exists ahead.
  * @param  string file_path   relative/absolute path
- * @param  {[type]} data      string or buffer are internally supported, if you pass a object, 'JSON.stringify' method will be applied.
- * @param  {[type]} options   more options, please refer to https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback
+ * @param  {string/object/buffer} data      string or buffer are internally supported, if you pass a object, 'JSON.stringify' method will be applied.
+ * @param  {object} options   more options, please refer to https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback
  * @return promise
  */
 
@@ -97,7 +98,7 @@ pfs.writeFile = function(file_path, data, options) {
 
   return Promise.try(function() {
       if(!(file_path && data)) {
-        throw '<file_path> , <data> are not all assigned.'
+        throw '<file_path> , <data> are required.'
       }
     })
     .then(function(d) {
@@ -112,6 +113,35 @@ pfs.writeFile = function(file_path, data, options) {
     })
 }
 
+/**
+ * delete file
+ * @param  {string} file_path
+ * @return promise           return
+ */
 pfs.delFile = function(file_path) {
+  return Promise.fromCallback(function(node_cb) {
+    fs.unlink(file_path, node_cb);
+  })
+}
 
+/**
+ * YOU KNOW WHAT YOU ARE DOING !!!!!
+ * @param  {string} folder_path [description]
+ * @param  {boolean} force forcely to delete all files in this folder recursively.
+ * @return promise
+ */
+pfs.delFolder = function(folder_path, force) {
+  return Promise.fromCallback(function(node_cb) {
+      fs.rmdir(folder_path, node_cb);
+    })
+    .error(function(e) {
+      if(e.code == 'ENOTEMPTY' && force) {
+        var abs_folder_path = path.resolve(folder_path);
+
+        //!!!!! avoiding tragedy !!!!! YOU KNOW WHAT YOU ARE DOING.
+        return bash('rm -rf ' + abs_folder_path)
+      }
+
+      throw e.cause
+    })
 }

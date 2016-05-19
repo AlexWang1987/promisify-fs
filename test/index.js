@@ -1,7 +1,8 @@
 var pfs = require('../index.js');
+var ok = require('assert');
 
 pfs
-  .writeFile('../inde1x.js','sd')
+  .delFolder('../ss',true)
   .then(function(fi) {
     console.log('e',fi);
   })

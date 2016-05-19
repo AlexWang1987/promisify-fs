@@ -54,11 +54,16 @@ fs
 # API
 
 * fileExists(file_path)
-* folderExists(file_path)
+* folderExists(folder_path)
 * readFile(file_path[, options])
-* writeFile((file_path, data[, options])
-    if data is neither  `Buffer` nor `String`, `JSON.stringify` will be applied with extra two optional params in options,[replacer][space]
-*
+* delFile(file_path)
+* writeFile(file_path, data[, options])
+
+>    if data is neither  `Buffer` nor `String`, `JSON.stringify` will be applied with extra two optional params in options,[replacer][space]
+
+* delFolder(folder_path[,force])
+
+>    YOU KNOW WHAT YOU ARE DOING !!!!! forcely to delete all files in this folder recursively.
 
 continuing...
 
