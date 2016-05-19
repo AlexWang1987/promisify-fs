@@ -29,6 +29,23 @@ fs
     console.error(e);
   })
 
+fs
+  .readFile('../inde1x.js')
+  .then(function(fi) {
+    console.log(fi);
+  })
+  .catch(function(e) {
+    console.log('---->', e);
+  })
+
+fs
+  .writeFile('../inde1x.js')
+  .then(function(fi) {
+    console.log(fi);
+  })
+  .catch(function(e) {
+    console.log('---->', e);
+  })
 
 ```
 
@@ -36,7 +53,8 @@ fs
 * fileExists(file_path)
 * folderExists(file_path)
 * readFile(file[, options])
-* writeFile((file_path, data[, options]) //if data is neither  `Buffer` nor `String`, `JSON.stringify` will be applied with extra two optional params in options,[replacer][space]
+* writeFile((file_path, data[, options])
+    if data is neither  `Buffer` nor `String`, `JSON.stringify` will be applied with extra two optional params in options,[replacer][space]
 *
 
 continuing...
