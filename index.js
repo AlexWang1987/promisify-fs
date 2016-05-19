@@ -5,7 +5,6 @@ var Promise = require('bluebird');
 var fs = require('fs');
 var path = require('path');
 
-
 /**
  * expose promisified fs
  */
@@ -80,8 +79,8 @@ pfs.readFile = function(file_path, options) {
   options['encoding'] = options['encoding'] || 'utf8';
 
   return Promise.fromCallback(function(node_cb) {
-      fs.readFile(file_path, options, node_cb)
-    })
+    fs.readFile(file_path, options, node_cb)
+  })
 }
 
 /**
@@ -96,14 +95,23 @@ pfs.writeFile = function(file_path, data, options) {
   var options = options || {};
   options['encoding'] = options['encoding'] || 'utf8';
 
-  return Promise.fromCallback(function(node_cb) {
-      //try to stringify
-      if(!~['String', 'Buffer'].indexOf(data.constructor.name)) {
-        data = JSON.stringify(data, options.replacer || null, options.space || null);
+  return Promise.try(function() {
+      if(! (file_path && data)){
+        throw '<file_path> , <data> are not all assigned.'
       }
+    })
+    .then(function(d) {
+      Promise.fromCallback(function(node_cb) {
+        //try to stringify
+        if(!~['String', 'Buffer'].indexOf(data.constructor.name)) {
+          data = JSON.stringify(data, options.replacer || null, options.space || null);
+        }
 
-      fs.writeFile(file_path, data, options, node_cb)
+        fs.writeFile(file_path, data, options, node_cb)
+      })
     })
 }
 
+pfs.delFile = function(file_path) {
 
+}

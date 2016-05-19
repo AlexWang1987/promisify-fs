@@ -1,9 +1,9 @@
 var pfs = require('../index.js');
 
 pfs
-  .readFile('../inde1x.js')
+  .writeFile('../inde1x.js')
   .then(function(fi) {
-    console.log(fi);
+    console.log('e',fi);
   })
   .catch(function(e) {
     console.log('---->', e);
