@@ -65,6 +65,10 @@ fs
 
 >    YOU KNOW WHAT YOU ARE DOING !!!!! forcely to delete all files in this folder recursively.
 
+* addFolder(folder_path)
+
+>   It will create folders recursively by default.
+
 continuing...
 
 If you want to have all asynchronous methods operating file, please refer to [bluebird](http://bluebirdjs.com/docs/api/promise.promisifyall.html) library.

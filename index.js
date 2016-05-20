@@ -5,6 +5,7 @@ var Promise = require('bluebird');
 var fs = require('fs');
 var path = require('path');
 var bash = require('promisify-bash');
+var ok = require('assert');
 
 /**
  * expose promisified fs
@@ -143,5 +144,24 @@ pfs.delFolder = function(folder_path, force) {
       }
 
       throw e.cause
+    })
+}
+
+/**
+ * create a folder recursively
+ * @param {string} folder_path relative or absolute are both supported
+ * @return promise
+ */
+
+pfs.addFolder = function(folder_path) {
+  return Promise.try(function() {
+      //assertion
+      ok(folder_path, 'folder_path is required.');
+
+      //relative support
+      return path.resolve(folder_path)
+    })
+    .then(function(abs_folder_path) {
+      return bash('mkdir -p ' + abs_folder_path)
     })
 }
