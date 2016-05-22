@@ -1,0 +1,1816 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"file",
+				"file_stat"
+			],
+			[
+				"op",
+				"options"
+			],
+			[
+				"cli",
+				"cli_path"
+			],
+			[
+				"option",
+				"options"
+			],
+			[
+				"prmisi",
+				"promisify-fs	(index.js)"
+			],
+			[
+				"de",
+				"description"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"fa",
+				"flag"
+			],
+			[
+				"_nor",
+				"_normalizedArgs"
+			],
+			[
+				"arg",
+				"argv"
+			],
+			[
+				"pa",
+				"params"
+			],
+			[
+				"requ",
+				"requiredOptions"
+			],
+			[
+				"parse",
+				"parser"
+			],
+			[
+				"ass",
+				"assignOptions"
+			],
+			[
+				"raw",
+				"rawArgs"
+			],
+			[
+				"unk",
+				"unknownOptions"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"ar",
+				"args"
+			],
+			[
+				"normal",
+				"normalizedArgs〔variable〕"
+			],
+			[
+				"norm",
+				"normalizedArgs〔variable〕"
+			],
+			[
+				"nor",
+				"normalizedArgs〔variable〕"
+			],
+			[
+				"last",
+				"lastOption"
+			],
+			[
+				"opto",
+				"option+o"
+			],
+			[
+				"proc",
+				"process"
+			],
+			[
+				"require",
+				"required	(index.js)"
+			],
+			[
+				"opt",
+				"option	(index.js)"
+			],
+			[
+				"plu",
+				"plugin_name"
+			],
+			[
+				"wb",
+				"wbp_home"
+			],
+			[
+				"pkg",
+				"pkgs"
+			],
+			[
+				"pro",
+				"promisify-fs	(index.js)"
+			],
+			[
+				"abs",
+				"abs_where"
+			],
+			[
+				"folder",
+				"folder_path"
+			],
+			[
+				"ab",
+				"abs_folder_path"
+			],
+			[
+				"fold",
+				"folder_path"
+			],
+			[
+				"cau",
+				"cause"
+			],
+			[
+				"for",
+				"force"
+			],
+			[
+				"fi",
+				"file_path"
+			],
+			[
+				"wr",
+				"writeFile	(index.js)"
+			],
+			[
+				"fol",
+				"folderExists	(index.js)"
+			],
+			[
+				"des",
+				"description	(package.json)"
+			],
+			[
+				"promisi",
+				"promisify-npm	(package.json)"
+			],
+			[
+				"Al",
+				"AlexWang	(package.json)"
+			],
+			[
+				"fr",
+				"fromCallback"
+			],
+			[
+				"promis",
+				"promisify-bash	(index.js)"
+			],
+			[
+				"all",
+				"allowUnknownOption	(index.js)"
+			],
+			[
+				"execu",
+				"executables	(index.js)"
+			],
+			[
+				"unknow",
+				"unknowOption"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"getbr",
+				"getBranch	(index.js)"
+			],
+			[
+				"br",
+				"branchName,options"
+			],
+			[
+				"bran",
+				"branchName	(index.js)"
+			],
+			[
+				"brna",
+				"branchName	(index.js)"
+			],
+			[
+				"ta",
+				"tagname	(index.js)"
+			],
+			[
+				"getb",
+				"getBranch	(index.js)"
+			],
+			[
+				"getBr",
+				"getCurrentBranch"
+			],
+			[
+				"c",
+				"c	promise .catch handler"
+			],
+			[
+				"get",
+				"getTags	(index.js)"
+			],
+			[
+				"git_r",
+				"git_repo_path"
+			],
+			[
+				"Add",
+				"AddToDo"
+			],
+			[
+				"dis",
+				"dispatch	(VisibleTodoList.js)"
+			],
+			[
+				"ac",
+				"actions/"
+			],
+			[
+				"Todo",
+				"TodoList"
+			],
+			[
+				"SHOW",
+				"SHOW_COMPLETE	(actions.js)"
+			],
+			[
+				"todo",
+				"todoAppReducer"
+			],
+			[
+				"con",
+				"const	(actions.js)"
+			],
+			[
+				"i",
+				"i	export default from module"
+			],
+			[
+				"app",
+				"App.js"
+			],
+			[
+				"js",
+				"App.js"
+			],
+			[
+				"demo",
+				"deomo	(es6_demo.sublime-snippet)"
+			],
+			[
+				"deo",
+				"demo	(es6_demo.sublime-snippet)"
+			],
+			[
+				"if",
+				"if	export {} from ''"
+			],
+			[
+				"act",
+				"action_setFilter	(actions.js)"
+			],
+			[
+				"S",
+				"SHOW_ALL	(actions.js)"
+			],
+			[
+				"cl",
+				"cl	console.log"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"host",
+				"hostSize"
+			],
+			[
+				"ea",
+				"eat"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"sel",
+				"selectedFile"
+			],
+			[
+				"Jas",
+				"JasminClass.specs.js"
+			],
+			[
+				"it",
+				"it	it contains many expectations"
+			],
+			[
+				"2bu",
+				"2bud	(2bud.sublime-snippet)"
+			],
+			[
+				"acc",
+				"accountInfo	(index.js)"
+			],
+			[
+				"a",
+				"angular/"
+			],
+			[
+				"set",
+				"setTimeout〔function〕"
+			],
+			[
+				"util",
+				"util_liveserver〔variable〕"
+			],
+			[
+				"Media",
+				"MediaAdd"
+			],
+			[
+				"media",
+				"media_add.vue"
+			],
+			[
+				"node",
+				"node_modules	(npm-debug.log)"
+			],
+			[
+				"bui",
+				"buildDir"
+			],
+			[
+				"wpP",
+				"wpPaths"
+			],
+			[
+				"project",
+				"projectDir"
+			],
+			[
+				"wp",
+				"wpConf"
+			],
+			[
+				"context",
+				"contextRoot"
+			],
+			[
+				"temp",
+				"templateUrl"
+			],
+			[
+				"lib",
+				"libsmap"
+			],
+			[
+				"add",
+				"addVendors	(webpack.json.js)"
+			],
+			[
+				"vend",
+				"vendorMaps"
+			],
+			[
+				"vendo",
+				"vendorId"
+			],
+			[
+				"ven",
+				"vendorMaps"
+			],
+			[
+				"chun",
+				"chunkFilename"
+			],
+			[
+				"en",
+				"entry"
+			],
+			[
+				"vue",
+				"vueLearn"
+			],
+			[
+				"webp",
+				"webpack.json.js"
+			],
+			[
+				"Compon",
+				"ComponentA	(index.vue)"
+			],
+			[
+				"compo",
+				"components	(index.js)"
+			],
+			[
+				"Compo",
+				"ComponentA"
+			],
+			[
+				"lo",
+				"login"
+			],
+			[
+				"menu",
+				"menuItems"
+			],
+			[
+				"menuItem",
+				"menuItem"
+			],
+			[
+				"mnu",
+				"menuItems	(index.js)"
+			],
+			[
+				"entry",
+				"entry_chk"
+			],
+			[
+				"menuite",
+				"menuItems	(index.js)"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"templ",
+				"templateUrl	(index.js)"
+			],
+			[
+				"angular",
+				"libs/angular/angular.js"
+			],
+			[
+				"font",
+				"fontsOutputLoader"
+			],
+			[
+				"babel",
+				"babelTranscompilerLoader"
+			],
+			[
+				"src",
+				"srcModules"
+			],
+			[
+				"an",
+				"angular-route/"
+			],
+			[
+				"angu",
+				"angular"
+			],
+			[
+				"scs",
+				"scssLoader"
+			],
+			[
+				"bgco",
+				"background-color"
+			],
+			[
+				"style",
+				"src/css/style.css"
+			],
+			[
+				"sublime",
+				"Babel.sublime-settings"
+			],
+			[
+				"scri",
+				"scriptChild"
+			],
+			[
+				"ang",
+				"libs/angular/angular.min.js"
+			],
+			[
+				"custom",
+				"customerTemplate"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 126.0,
+		"last_filter": "jsn",
+		"selected_items":
+		[
+			[
+				"jsn",
+				"Set Syntax: JSON"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"gotot",
+				"GotoLastEditEnhanced: Goto next edit"
+			],
+			[
+				"last",
+				"GotoLastEditEnhanced: Goto last edit"
+			],
+			[
+				"ip",
+				"Package Control: Install Package"
+			],
+			[
+				"user",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"prettse",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"eslinter",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"pretter",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"prettingse",
+				"Preferences: Settings - Default"
+			],
+			[
+				"setting",
+				"Preferences: Settings - Default"
+			],
+			[
+				"pack",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"rp",
+				"Package Control: Remove Package"
+			],
+			[
+				"enablelin",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"enable",
+				"SublimeCodeIntel: Enable Live Autocompletion for Current Language"
+			],
+			[
+				"prtty",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"settingu",
+				"Preferences: Settings - User"
+			],
+			[
+				"sett",
+				"Preferences: Settings - User"
+			],
+			[
+				"web",
+				"Web Inspector"
+			],
+			[
+				"pretty",
+				"HTMLPrettify: Set Plugin Options"
+			],
+			[
+				"keys",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"to",
+				"View: Toggle Side Bar"
+			],
+			[
+				"togsb",
+				"View: Toggle Side Bar"
+			],
+			[
+				"toggle sid",
+				"View: Toggle Side Bar"
+			],
+			[
+				"toggle si",
+				"View: Toggle Side Bar"
+			],
+			[
+				"toggle side",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"side",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"revea",
+				"Side Bar: Reveal File"
+			],
+			[
+				"toggle s",
+				"View: Toggle Side Bar"
+			],
+			[
+				"setting ",
+				"Preferences: Settings - Default"
+			],
+			[
+				"package",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"packge",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"rean",
+				"File: Rename"
+			],
+			[
+				"default",
+				"Preferences: Settings - Default"
+			],
+			[
+				"ke",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"view pack",
+				"PackageResourceViewer: View Package Resource"
+			],
+			[
+				"vps",
+				"PackageResourceViewer: Edit Package Resource"
+			],
+			[
+				"vp",
+				"PackageResourceViewer: View Package Resource"
+			],
+			[
+				"edit sni",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"edit",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"rm",
+				"Emmet: Remove Tag"
+			],
+			[
+				"packup",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"conver",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"setting de",
+				"Preferences: Settings - Default"
+			],
+			[
+				"settingd",
+				"Preferences: Settings - Default"
+			],
+			[
+				"seting",
+				"Preferences: Settings - Default"
+			],
+			[
+				"key ",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"pav",
+				"PackageResourceViewer: View Package Resource"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pv",
+				"PackageResourceViewer: View Package Resource"
+			],
+			[
+				"re",
+				"File: Rename"
+			],
+			[
+				"sni",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"select",
+				"Bookmarks: Select All"
+			],
+			[
+				"make sni",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"vue",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"keyse",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"markdow",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"sidebar",
+				"Focus File on Sidebar"
+			],
+			[
+				"msni",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"lint",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"open",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"renma",
+				"File: Rename"
+			],
+			[
+				"folder",
+				"File: New Folder Relative to Project Root"
+			],
+			[
+				"replsh",
+				"SublimeREPL: Shell"
+			],
+			[
+				"repl",
+				"Set Syntax: Io Repl"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"scop",
+				"Toggle ScopeAlways"
+			],
+			[
+				"goto",
+				"Emmet: Go to Matching Pair"
+			],
+			[
+				"scope",
+				"Toggle ScopeAlways"
+			],
+			[
+				"OPEN",
+				"Open URL"
+			],
+			[
+				"new",
+				"ANF: New File"
+			],
+			[
+				"open bro",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"keyd",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"keyu",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"linterseting",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"setingu",
+				"Preferences: Settings - User"
+			],
+			[
+				"setingde",
+				"Preferences: Settings - Default"
+			],
+			[
+				"snippet",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"ali",
+				"AlignTab"
+			],
+			[
+				"settingde",
+				"Preferences: Settings - Default"
+			],
+			[
+				"de	",
+				"ANF: Delete File"
+			],
+			[
+				"del",
+				"ANF: Delete File"
+			],
+			[
+				"keyus",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"keyde",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"packview",
+				"PackageResourceViewer: View Package Resource"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"dle",
+				"File: Delete"
+			],
+			[
+				"packgevi",
+				"PackageResourceViewer: View Package Resource"
+			],
+			[
+				"openbrow",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"browser",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"copy",
+				"File: Copy Path"
+			],
+			[
+				"copyurl",
+				"File: Copy URL"
+			],
+			[
+				"opne",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"alignter",
+				"Preferences: Alignment Key Bindings – User"
+			],
+			[
+				"viewp",
+				"PackageResourceViewer: View Package Resource"
+			],
+			[
+				"packagevi",
+				"PackageResourceViewer: View Package Resource"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"alignment",
+				"Preferences: Alignment File Settings – Syntax Specific – User"
+			],
+			[
+				"aligment",
+				"Preferences: Alignment Key Bindings – User"
+			],
+			[
+				"tsb",
+				"View: Toggle Side Bar"
+			],
+			[
+				"toggle",
+				"Toggle editable command"
+			],
+			[
+				"tr",
+				"Toggle Readonly"
+			],
+			[
+				"tro",
+				"Toggle Readonly"
+			],
+			[
+				"trd",
+				"Toggle Readonly"
+			],
+			[
+				"read",
+				"Toggle Readonly"
+			],
+			[
+				"JS",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"SJON",
+				"Set Syntax: JSON"
+			],
+			[
+				"packageresrouce",
+				"PackageResourceViewer: View Package Resource"
+			],
+			[
+				"package res",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"edit sn",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"fdel",
+				"AutoFileName: Default Settings"
+			],
+			[
+				"ms",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"de",
+				"File: Delete"
+			],
+			[
+				"Snippet: ",
+				"SnippetMaker: Edit Snippet"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 264.0,
+		"history":
+		[
+			"sublime.log_commands(True)",
+			"sublime.log_command(True)",
+			"sublime.log_commands(True)",
+			"sublime.show_command(True)",
+			"sublime.show_commands(True)",
+			"sublime.show_logs(True)",
+			"sublime.show_log(True)",
+			"sublime.log_commands(True)",
+			"sublime.log_commonds(True)",
+			"sublime_log_commonds(True)",
+			"sublime.log_commands(True)",
+			"view.run_command('go_to_file')",
+			"sublime.log_commands(True)",
+			"sublime.log_command(True)",
+			"view.settings().get('font_size')",
+			"view.settings().get()",
+			"sublime.log_commands(True);",
+			"sublime.log_command(True);",
+			"sublime.log_commands(True);",
+			"sublime.show_commands(True);",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(True);",
+			"sublime.show_log_commands(True);",
+			"sublime.show_commands(True)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands()",
+			"ls",
+			"sublime.log_input(True)",
+			"sublime.log_commands(True);",
+			"cla",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/Users/AlexWang/ws/wbp/index.js",
+		"/Users/AlexWang/ws/promisify-cli/package.json",
+		"/Users/AlexWang/ws/promisify-fs/README.md",
+		"/Users/AlexWang/ws/promisify-fs/index.js",
+		"/Users/AlexWang/ws/wbp/node_modules/commander/cli.xml",
+		"/Users/AlexWang/ws/wbp/node_modules/npm/node_modules/request/node_modules/http-signature/lib/parser.js",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/AlexWang/ws/promisify-cli/src/parser.js",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/Users/AlexWang/ws/wbp/node_modules/promisify-fs/index.js",
+		"/Users/AlexWang/ws/wbp/node_modules/commander/index.js",
+		"/Users/AlexWang/ws/wbp/node_modules/promisify-fs/.eslintrc",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/AlexWang/ws/wbp/package.json",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/fun.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/AlexWang/ws/demos/index.js",
+		"/Users/AlexWang/package.json",
+		"/Users/AlexWang/ws/promisify-npm/README.md",
+		"/Users/AlexWang/ws/promisify-npm/test/index.js",
+		"/Users/AlexWang/ws/promisify-npm/index.js",
+		"/Users/AlexWang/ws/promisify-npm/package.json",
+		"/Users/AlexWang/ws/promisify-fs/test/index.js",
+		"/Users/AlexWang/ws/promisify-fs/ss/indexjs",
+		"/Users/AlexWang/ws/promisify-fs/ss/index.js",
+		"/Users/AlexWang/ws/promisify-fs/inde1x.js",
+		"/Users/AlexWang/ws/promisify-fs/package.json",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/AlexWang/ws/promisify-npm/test/package.json",
+		"/Users/AlexWang/ws/promisify-bash/test/index.js",
+		"/Users/AlexWang/.npmrc",
+		"/Users/AlexWang/ws/promisify-bash/package.json",
+		"/Users/AlexWang/ws/promisify-fs/READM1E.md",
+		"/Users/AlexWang/ws/promisify-npm/node_modules/npm/lib/npm.js",
+		"/Users/AlexWang/ws/promisify-npm/node_modules/npm/lib/uninstall.js",
+		"/Users/AlexWang/ws/promisify-npm/node_modules/npm/bin/npm-cli.js",
+		"/Users/AlexWang/Downloads/vpn/index.js",
+		"/Users/AlexWang/ws/wbp/README.md",
+		"/Users/AlexWang/ws/wbp/.gitignore",
+		"/Users/AlexWang/ws/promisify-git/README.md",
+		"/Users/AlexWang/ws/promisify-git/index.js",
+		"/Users/AlexWang/ws/promisify-git/test/index.js",
+		"/Users/AlexWang/ws/promisify-git/./test/test.js",
+		"/Users/AlexWang/.bash_profile",
+		"/Users/AlexWang/ws/flow/demo/lesson01/index.dslf",
+		"/Users/AlexWang/ws/flow/index.js",
+		"/Users/AlexWang/ws/promisify-bash/.gitignore",
+		"/Users/AlexWang/ws/sublimews/WAWF/WAWF.sublime-project",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/components/App.js",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/Web Inspector/swi.sublime-settings",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/swi.sublime-settings",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/components/demo.jsx",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/components/TodoList.js",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/index.js",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/index.html",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux_adv/index.js",
+		"/Users/AlexWang/ws/sublimews/WAWF/actions.js",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/es6 create function.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/es6 export function.sublime-snippet",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/actionCreaters.js",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/components/Footer.js",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/components/Link.js",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/containers/FilterLink.js",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/containers/VisibleTodoList.js",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/components/Todo.js",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/actions/actions.js",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/containers/AddToDo.js",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/reducers/index.js",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/reducers/appReducer.js",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/../fsdfsd.js",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/dsfds",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/insertBlockScope.sublime-macro",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/insertBlockScope_Inline.sublime-macro",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/es6_af.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/es6 export let const.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/es6 export let.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/es6 export default .sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/es6 import default.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/es6 import from module.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/es6 export default function.sublime-snippet",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/App.js",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/es6_demo.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/PackageResourceViewer/PackageResourceViewer.sublime-settings",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/PackageResourceViewer.sublime-settings",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/PackageResourceViewer/README.md",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/0_package_control_loader/00-package_control.py",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/2b.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/h5.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/toggle_vintageous.py",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/JsFormat.sublime-settings",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/appReducer.js",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/redux/actions.js",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/h5.sublime-snippet/export default function.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/h5.sublime-snippet/import default.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/h5.sublime-snippet/import from module.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/es6_sw.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/macros.sublime-macro/insertBlockScope.sublime-macro",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/macros.sublime-macro/insertBlockScope_Inline.sublime-macro",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/h5.sublime-snippet/export function.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/h5.sublime-snippet/afun.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/h5.sublime-snippet/fun.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/h5.sublime-snippet/create function.sublime-snippet",
+		"/Users/AlexWang/Library/Application Support/Sublime Text 3/Packages/User/h5.sublime-snippet/h5.sublime-snippet",
+		"/Users/AlexWang/ws/sublimews/WAWF/index.js",
+		"/Users/AlexWang/ws/sublimews/WAWF/webpack/webpack.config.dev.js",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/dev/index.js",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/dev/app.vue",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/dev/index.html",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/dev/index.tpl",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/dev/index.scss",
+		"/Users/AlexWang/ws/sublimews/WAWF/index.sass",
+		"/Users/AlexWang/ws/sublimews/WAWF/src/modules/dev/index.css",
+		"/Users/AlexWang/ws/sublimews/WAWF/webpack/webpack.json.js",
+		"/Users/AlexWang/ws/sublimews/WAWF/package.json",
+		"/Users/AlexWang/Downloads/index.js",
+		"/Users/AlexWang/Downloads/untitled.sublime-macro",
+		"/Users/AlexWang/Documents/presetation.txt",
+		"/Users/AlexWang/ws/Es6/.idea/encodings.xml",
+		"/Applications/sb3.app/Contents/MacOS/Packages/Default.sublime-package",
+		"/Users/AlexWang/Downloads/账号.txt",
+		"/Users/AlexWang/Workspace/sublimews/WAWF/.eslintrc",
+		"/Users/AlexWang/Workspace/sublimews/WAWF/src/modules/fileHtml5/index.js",
+		"/Users/AlexWang/.eslintrc",
+		"/Users/AlexWang/Workspace/gitL/.git/config",
+		"/Users/AlexWang/Downloads/demo.js"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 148.0,
+		"where_history":
+		[
+			"<open folders>,/Users/AlexWang/Workspace/sublimews/WAWF/node_modules",
+			"<open folders>",
+			"/Users/AlexWang/Workspace/,<open folders>",
+			"/Users/AlexWang/Workspace/sb/app",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"cli_path",
+			"loadCliConfig",
+			"console",
+			"assignOptions",
+			"normolizeFlags",
+			"loadCliConfig",
+			"Parser",
+			"loadCliConfig",
+			"you",
+			"port",
+			"loadCliConfig",
+			"flag",
+			"option",
+			"optionFor",
+			"arg",
+			"assignOptions",
+			"normalizeArgs",
+			"getParams",
+			"enableUnkownOptions",
+			"_normalizedArgs",
+			"arg",
+			"args",
+			"normalizeArgs",
+			"_rawArgs",
+			"Parser",
+			"normalize",
+			"parseOptions",
+			"ldksjfls",
+			"parseArgs",
+			"description",
+			"normalizedArgs",
+			"normalizeArgs",
+			"parseOptions",
+			"norArgs",
+			"parseOptions",
+			"normalizedArgs",
+			"normalize",
+			"super",
+			"args",
+			"type",
+			"html",
+			"kdjflds",
+			"short",
+			"port",
+			"cmd",
+			"optionFor",
+			"parseOptions",
+			"normalize",
+			".is",
+			"is",
+			"optionFor",
+			"parseOptions",
+			"normalize",
+			"action",
+			"parseOptions",
+			"parseArgs",
+			"}\n",
+			"parseArgs",
+			"this.options",
+			"pre",
+			"null",
+			"，",
+			"which",
+			"pkgs",
+			"npmLoadConfig",
+			"pkgs",
+			"file_path",
+			"mst",
+			"file",
+			"expose",
+			"npmLoadConfig",
+			"initDefaultPkg",
+			"fileExists",
+			"path",
+			"Promise",
+			"fs",
+			"Promise",
+			"open",
+			"fs",
+			"file_stat",
+			"return",
+			"where",
+			"inList",
+			"library",
+			"config",
+			"path",
+			"prefix",
+			"npm",
+			"Prefix",
+			"prefix",
+			"Uninstaller",
+			"npm.load",
+			"load",
+			"version",
+			"allowun",
+			"basename",
+			"parse",
+			"add",
+			"executables",
+			"Command",
+			"command",
+			"executables",
+			"executeSubCommand",
+			"parseOptions",
+			"parseExpectedArgs",
+			"parse",
+			"exists",
+			"bar",
+			"cmd",
+			"promgram",
+			"cmd",
+			"add",
+			"options",
+			"tagname",
+			"branchName",
+			"tags",
+			"d",
+			"({",
+			"updateTag",
+			"getTags",
+			"updateTag",
+			"git_repo_path",
+			"false",
+			"true",
+			"false",
+			"switch",
+			"open",
+			"super+,"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"/macros.sublime-macro/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 63.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ws.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"command.js",
+				"wbp/node_modules/commander/index.js"
+			],
+			[
+				"i",
+				"promisify-cli/index.js"
+			],
+			[
+				"fun",
+				"Packages/User/fun.sublime-snippet"
+			],
+			[
+				"fs/test",
+				"promisify-fs/test/index.js"
+			],
+			[
+				"test/in",
+				"promisify-npm/test/index.js"
+			],
+			[
+				"in",
+				"index.js"
+			],
+			[
+				".bash",
+				".bash_profile"
+			],
+			[
+				"com/",
+				"src/modules/redux/components/TodoList.js"
+			],
+			[
+				"comp/",
+				"src/modules/redux/components/App.js"
+			],
+			[
+				"ind",
+				"src/modules/redux/index.js"
+			],
+			[
+				"de",
+				"src/modules/redux/index.html"
+			],
+			[
+				"action",
+				"src/modules/redux/actions/actions.js"
+			],
+			[
+				"compo",
+				"src/modules/redux/components/Todo.js"
+			],
+			[
+				"appre",
+				"src/modules/redux/appReducer.js"
+			],
+			[
+				"app.js",
+				"src/modules/redux/App.js"
+			],
+			[
+				"dev/in",
+				"src/modules/dev/index.js"
+			],
+			[
+				"index",
+				"src/modules/dev/index.html"
+			],
+			[
+				"inde",
+				"src/modules/dev/index.js"
+			],
+			[
+				"f5",
+				"src/modules/fileHtml5/index.js"
+			],
+			[
+				"ja",
+				"src/modules/jasmin/index.js"
+			],
+			[
+				"jasm",
+				"tests/JasminClass.specs.js"
+			],
+			[
+				"sep",
+				"tests/JasminClass.specs.js"
+			],
+			[
+				"karm",
+				"karma.conf.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"index/in",
+				"src/modules/index/index.js"
+			],
+			[
+				"sytl",
+				"src/assets/css/style.scss"
+			],
+			[
+				"lear/in",
+				"src/modules/vueLearn/index.js"
+			],
+			[
+				"vue/in",
+				"src/modules/vueLearn/index.html"
+			],
+			[
+				"vue.js",
+				"src/modules/vueLearn/index.js"
+			],
+			[
+				"index/inde",
+				"src/modules/index/index.js"
+			],
+			[
+				"lear",
+				"src/modules/vueLearn/index.js"
+			],
+			[
+				"vue/inde",
+				"src/modules/vueLearn/index.html"
+			],
+			[
+				"vuel",
+				"src/modules/vueLearn/index.html"
+			],
+			[
+				"we",
+				"webpack.config.js"
+			],
+			[
+				"index/index",
+				"src/modules/index/index.html"
+			],
+			[
+				"home",
+				"src/modules/home/index.html"
+			],
+			[
+				"index.js",
+				"src/modules/index/index.js"
+			],
+			[
+				"index.html",
+				"src/modules/index/index.html"
+			],
+			[
+				"home/index",
+				"src/modules/home/index.js"
+			],
+			[
+				"video",
+				"src/modules/video/index.js"
+			],
+			[
+				"ine",
+				"src/modules/index/index.tpl"
+			],
+			[
+				"ent",
+				"entry.js"
+			],
+			[
+				"en",
+				"src/entries/entry.js"
+			],
+			[
+				"index.",
+				"www/index.html"
+			],
+			[
+				"css/style.css",
+				"www/css/style.css"
+			],
+			[
+				"entry",
+				"src/entry.js"
+			],
+			[
+				"indhtml",
+				"www/index.html"
+			],
+			[
+				"indx",
+				"src/index.js"
+			],
+			[
+				"customer",
+				"src/tpl/customerTemplate.tpl"
+			],
+			[
+				"index.htm",
+				"www/index.html"
+			],
+			[
+				"webpack",
+				"webpack.config.js"
+			],
+			[
+				"inde.css",
+				"app/css/index.css"
+			],
+			[
+				"index.j",
+				"app/modules/index.js"
+			],
+			[
+				"inde.js",
+				"app/modules/index.js"
+			],
+			[
+				"class",
+				"node_modules/babel-core/node_modules/babel-generator/lib/generators/classes.js"
+			],
+			[
+				"index.css",
+				"app/css/index.css"
+			],
+			[
+				"index.sc",
+				"app/css/index.scss"
+			],
+			[
+				"index.cs",
+				"app/css/index.scss"
+			],
+			[
+				"inde.map",
+				"index.css.map"
+			],
+			[
+				"inde.hml",
+				"bin/index.html"
+			],
+			[
+				"index.h",
+				"bin/index.html"
+			],
+			[
+				".sublime",
+				"sb.sublime-project"
+			],
+			[
+				"sb.su",
+				"sb.sublime-project"
+			],
+			[
+				"app",
+				"app/app.js"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				"readme",
+				"node_modules/css-loader/node_modules/cssnano/node_modules/postcss-svgo/node_modules/svgo/node_modules/colors/ReadMe.md"
+			],
+			[
+				"read",
+				"node_modules/babel-core/README.md"
+			],
+			[
+				"packge",
+				"package.json"
+			],
+			[
+				"reac",
+				"node_modules/react/react.js"
+			],
+			[
+				"navmo",
+				"app/models/NavModel.js"
+			],
+			[
+				"model",
+				"node_modules/gana/Model.js"
+			],
+			[
+				"gana/in",
+				"node_modules/gana/index.js"
+			],
+			[
+				"prot",
+				"node_modules/react-router/lib/PropTypes.js"
+			],
+			[
+				"react-router",
+				"node_modules/react-router/lib/Router.js"
+			],
+			[
+				"gana/inde",
+				"node_modules/gana/index.js"
+			],
+			[
+				"",
+				"webpack.config.js"
+			],
+			[
+				"bootstr",
+				"src/public/assets/css/bootstrap.min.css"
+			],
+			[
+				"web",
+				"webpack.config.babel.js"
+			],
+			[
+				"media",
+				"src/app/models/media/Media.php"
+			],
+			[
+				"mediamedia",
+				"src/app/models/media/Media.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/ws/sublimews/WAWF.sublime-project"
+			],
+			[
+				"io",
+				"~/Workspace/sb/ionichelloworld.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
