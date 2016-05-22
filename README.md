@@ -56,6 +56,7 @@ fs
 * fileExists(file_path)
 * folderExists(folder_path)
 * readFile(file_path[, options])
+* readJSON(file_path[,options])
 * delFile(file_path)
 * writeFile(file_path, data[, options])
 

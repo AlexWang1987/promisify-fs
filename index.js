@@ -23,7 +23,7 @@ pfs.fileExists = function(file_path) {
     })
     .then(function(stat) {
       if(stat.isFile()) {
-        if(file_path[0] == '.') stat['abs_path'] = path.resolve(file_path)
+        stat['abs_path'] = path.resolve(file_path);
         return stat
       }
 
@@ -52,7 +52,7 @@ pfs.folderExists = function(folder_path) {
     })
     .then(function(stat) {
       if(stat.isDirectory()) {
-        if(folder_path[0] == '.') stat['abs_path'] = path.resolve(folder_path)
+        stat['abs_path'] = path.resolve(folder_path);
         return stat
       }
 
