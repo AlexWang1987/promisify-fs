@@ -86,6 +86,22 @@ pfs.readFile = function(file_path, options) {
 }
 
 /**
+ * read file as JSON Object
+ * @param  {string} file_path file
+ * @param  {object} options
+ * @return {promise}           json
+ */
+pfs.readJSON = function (file_path, options) {
+  var options = options || {};
+  options['encoding'] = options['encoding'] || 'utf8';
+
+  return pfs
+    .readFile(file_path)
+    .then(JSON.parse)
+}
+
+
+/**
  * Write data with `string` `buffer` `object` type to a file, it will override former file, so be cautious to verify if it exists ahead.
  * @param  string file_path   relative/absolute path
  * @param  {string/object/buffer} data      string or buffer are internally supported, if you pass a object, 'JSON.stringify' method will be applied.
