@@ -73,3 +73,10 @@ fs
 continuing...
 
 If you want to have all asynchronous methods operating file, please refer to [bluebird](http://bluebirdjs.com/docs/api/promise.promisifyall.html) library.
+
+# Good Library Companions
+# [promisify-cli](https://www.npmjs.com/package/promisify-cli)
+# [promisify-bash](https://www.npmjs.com/package/promisify-bash)
+# [promisify-fetch](https://www.npmjs.com/package/promisify-fetch)
+# [promsifiy-git](https://www.npmjs.com/package/promisify-git)
+# [promsifiy-npm](https://www.npmjs.com/package/promisify-npm)
