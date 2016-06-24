@@ -59,6 +59,7 @@ fs
 * readJSON(file_path[,options])
 * delFile(file_path)
 * writeFile(file_path, data[, options])
+* getModulePackInfo([module])
 
 >    if data is neither  `Buffer` nor `String`, `JSON.stringify` will be applied with extra two optional params in options,[replacer][space]
 
