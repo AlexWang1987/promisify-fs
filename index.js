@@ -1,6 +1,5 @@
-/**
- * Dependences
- */
+/*eslint-disable*/
+
 var Promise = require('bluebird');
 var fs = require('fs');
 var path = require('path');
@@ -17,12 +16,12 @@ var pfs = module.exports = {};
  * @param  string file_path file path
  * @return promise          promise
  */
-pfs.fileExists = function(file_path) {
-  return Promise.fromCallback(function(node_cb) {
+pfs.fileExists = function (file_path) {
+  return Promise.fromCallback(function (node_cb) {
       fs.stat(file_path, node_cb)
     })
-    .then(function(stat) {
-      if(stat.isFile()) {
+    .then(function (stat) {
+      if (stat.isFile()) {
         stat['abs_path'] = path.resolve(file_path);
         return stat
       }
@@ -30,8 +29,8 @@ pfs.fileExists = function(file_path) {
       //file is not exactly the `file` type
       return null
     })
-    .error(function(e) {
-      if(e.code == 'ENOENT') {
+    .error(function (e) {
+      if (e.code == 'ENOENT') {
         //file does not exist
         return null
       }
@@ -46,12 +45,12 @@ pfs.fileExists = function(file_path) {
  * @param  string folder_path file path
  * @return promise          promise
  */
-pfs.folderExists = function(folder_path) {
-  return Promise.fromCallback(function(node_cb) {
+pfs.folderExists = function (folder_path) {
+  return Promise.fromCallback(function (node_cb) {
       fs.stat(folder_path, node_cb)
     })
-    .then(function(stat) {
-      if(stat.isDirectory()) {
+    .then(function (stat) {
+      if (stat.isDirectory()) {
         stat['abs_path'] = path.resolve(folder_path);
         return stat
       }
@@ -59,9 +58,9 @@ pfs.folderExists = function(folder_path) {
       //file is not exactly the `folder` type
       return null
     })
-    .error(function(e) {
+    .error(function (e) {
       //folder does not exist
-      if(e.code == 'ENOENT') {
+      if (e.code == 'ENOENT') {
         return null
       }
 
@@ -76,11 +75,11 @@ pfs.folderExists = function(folder_path) {
  * @param  {[type]} options   more options, please refer to https://nodejs.org/api/fs.html#fs_fs_readfile_file_options_callback
  * @return promise
  */
-pfs.readFile = function(file_path, options) {
+pfs.readFile = function (file_path, options) {
   var options = options || {};
   options['encoding'] = options['encoding'] || 'utf8';
 
-  return Promise.fromCallback(function(node_cb) {
+  return Promise.fromCallback(function (node_cb) {
     fs.readFile(file_path, options, node_cb)
   })
 }
@@ -100,7 +99,6 @@ pfs.readJSON = function (file_path, options) {
     .then(JSON.parse)
 }
 
-
 /**
  * Write data with `string` `buffer` `object` type to a file, it will override former file, so be cautious to verify if it exists ahead.
  * @param  string file_path   relative/absolute path
@@ -109,19 +107,19 @@ pfs.readJSON = function (file_path, options) {
  * @return promise
  */
 
-pfs.writeFile = function(file_path, data, options) {
+pfs.writeFile = function (file_path, data, options) {
   var options = options || {};
   options['encoding'] = options['encoding'] || 'utf8';
 
-  return Promise.try(function() {
-      if(!(file_path && data)) {
+  return Promise.try(function () {
+      if (!(file_path && data)) {
         throw '<file_path> , <data> are required.'
       }
     })
-    .then(function(d) {
-      return Promise.fromCallback(function(node_cb) {
+    .then(function (d) {
+      return Promise.fromCallback(function (node_cb) {
         //try to stringify
-        if(!~['String', 'Buffer'].indexOf(data.constructor.name)) {
+        if (!~['String', 'Buffer'].indexOf(data.constructor.name)) {
           data = JSON.stringify(data, options.replacer || null, options.space || null);
         }
 
@@ -135,8 +133,8 @@ pfs.writeFile = function(file_path, data, options) {
  * @param  {string} file_path
  * @return promise           return
  */
-pfs.delFile = function(file_path) {
-  return Promise.fromCallback(function(node_cb) {
+pfs.delFile = function (file_path) {
+  return Promise.fromCallback(function (node_cb) {
     fs.unlink(file_path, node_cb);
   })
 }
@@ -147,12 +145,12 @@ pfs.delFile = function(file_path) {
  * @param  {boolean} force forcely to delete all files in this folder recursively.
  * @return promise
  */
-pfs.delFolder = function(folder_path, force) {
-  return Promise.fromCallback(function(node_cb) {
+pfs.delFolder = function (folder_path, force) {
+  return Promise.fromCallback(function (node_cb) {
       fs.rmdir(folder_path, node_cb);
     })
-    .error(function(e) {
-      if(e.code == 'ENOTEMPTY' && force) {
+    .error(function (e) {
+      if (e.code == 'ENOTEMPTY' && force) {
         var abs_folder_path = path.resolve(folder_path);
 
         //!!!!! avoiding tragedy !!!!! YOU KNOW WHAT YOU ARE DOING.
@@ -169,15 +167,52 @@ pfs.delFolder = function(folder_path, force) {
  * @return promise
  */
 
-pfs.addFolder = function(folder_path) {
-  return Promise.try(function() {
+pfs.addFolder = function (folder_path) {
+  return Promise.try(function () {
       //assertion
       ok(folder_path, 'folder_path is required.');
 
       //relative support
       return path.resolve(folder_path)
     })
-    .then(function(abs_folder_path) {
+    .then(function (abs_folder_path) {
       return bash('mkdir -p ' + abs_folder_path)
     })
 }
+
+/**
+ * getModulePackInfo
+ * @param  {string} [module] moudle is optional. default value is require.main module.
+ * @return {Promise}
+ */
+pfs.getModulePackInfo = function (module) {
+  return Promise.try(function () {
+    //specified module
+    var node_modules_paths = [];
+    if (module && module.paths && module.paths.length) {
+      node_modules_paths = module.paths;
+    }
+
+    //require main module
+    if (!node_modules_paths.length) node_modules_paths = require.main.paths;
+
+    return Promise
+      .mapSeries(node_modules_paths, function (node_modules_path) {
+        var pkg_file_path = path.resolve(node_modules_path, '../package.json');
+        return pfs
+          .fileExists(pkg_file_path)
+          .then(function (file_stat) {
+            if (file_stat) {
+              throw file_stat; //target package is found. stop iteration.
+            }
+          })
+      })
+      .then(function () {
+        throw 'Warning: The main module of process is not distributed by npm ecosystem.';
+      })
+      .catch(function (file_stat) {
+        return pfs.readJSON(file_stat.abs_path);
+      })
+  })
+}
+
