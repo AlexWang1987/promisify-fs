@@ -162,6 +162,28 @@ pfs.delFolder = function (folder_path, force) {
 }
 
 /**
+ * clone Folder
+ * @param  {string} source_folder
+ * @param  {string} dest_folder
+ * @param  {boolen} force         it will forcely overide dest-files
+ * @return {promise}
+ */
+pfs.cloneFolder = function (source_folder, dest_folder, force) {
+  return Promise.try(function () {
+    var copy_mode = force ? '-Rvf' : '-Rvn'; //Rvf Rvn
+    return pfs
+      .folderExists(dest_folder)
+      .then(function (folder_stat) {
+        if (!folder_stat) {
+          return pfs.addFolder(dest_folder);
+        }
+      }).then(function () {
+        return bash('cp ' + copy_mode + ' ' + source_folder + ' ' + dest_folder);
+      })
+  })
+}
+
+/**
  * create a folder recursively
  * @param {string} folder_path relative or absolute are both supported
  * @return promise
