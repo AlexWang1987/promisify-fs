@@ -71,6 +71,10 @@ fs
 
 >   It will create folders recursively by default.
 
+* cloneFolder(source_path,dest_path,force)
+
+> clone folder or files within it to a dest folder.
+
 continuing...
 
 If you want to have all asynchronous methods operating file, please refer to [bluebird](http://bluebirdjs.com/docs/api/promise.promisifyall.html) library.
