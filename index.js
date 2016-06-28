@@ -166,7 +166,7 @@ pfs.delFolder = function (folder_path, force) {
  */
 pfs.cloneFolder = function (source_folder, dest_folder, force) {
   return Promise.try(function () {
-    var result = shell.cp('-r' + (force ? 'f' : ''), source_folder, dest_folder);
+    var result = shell.cp('-r' + (force ? 'f' : 'n'), source_folder, dest_folder);
     if (result.code) {
       throw result
     }
