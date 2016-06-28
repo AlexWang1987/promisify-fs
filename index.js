@@ -3,7 +3,7 @@
 var Promise = require('bluebird');
 var fs = require('fs');
 var path = require('path');
-var bash = require('promisify-bash');
+var shell = require('shelljs');
 var ok = require('assert');
 
 /**
@@ -134,9 +134,12 @@ pfs.writeFile = function (file_path, data, options) {
  * @return promise           return
  */
 pfs.delFile = function (file_path) {
-  return Promise.fromCallback(function (node_cb) {
-    fs.unlink(file_path, node_cb);
-  })
+  return Promise.try(function () {
+    var result = shell.rm(('-f'), file_path);
+    if (result.code) {
+      throw result
+    }
+  });
 }
 
 /**
@@ -146,19 +149,12 @@ pfs.delFile = function (file_path) {
  * @return promise
  */
 pfs.delFolder = function (folder_path, force) {
-  return Promise.fromCallback(function (node_cb) {
-      fs.rmdir(folder_path, node_cb);
-    })
-    .error(function (e) {
-      if (e.code == 'ENOTEMPTY' && force) {
-        var abs_folder_path = path.resolve(folder_path);
-
-        //!!!!! avoiding tragedy !!!!! YOU KNOW WHAT YOU ARE DOING.
-        return bash('rm -rf ' + abs_folder_path)
-      }
-
-      throw e.cause
-    })
+  return Promise.try(function () {
+    var result = shell.rm('-r' + (force ? 'f' : ''), folder_path);
+    if (result.code) {
+      throw result
+    }
+  })
 }
 
 /**
@@ -170,16 +166,10 @@ pfs.delFolder = function (folder_path, force) {
  */
 pfs.cloneFolder = function (source_folder, dest_folder, force) {
   return Promise.try(function () {
-    var copy_mode = force ? '-Rvf' : '-Rvn'; //Rvf Rvn
-    return pfs
-      .folderExists(dest_folder)
-      .then(function (folder_stat) {
-        if (!folder_stat) {
-          return pfs.addFolder(dest_folder);
-        }
-      }).then(function () {
-        return bash('cp ' + copy_mode + ' ' + source_folder + ' ' + dest_folder);
-      })
+    var result = shell.cp('-r' + (force ? 'f' : ''), source_folder, dest_folder);
+    if (result.code) {
+      throw result
+    }
   })
 }
 
@@ -191,15 +181,11 @@ pfs.cloneFolder = function (source_folder, dest_folder, force) {
 
 pfs.addFolder = function (folder_path) {
   return Promise.try(function () {
-      //assertion
-      ok(folder_path, 'folder_path is required.');
-
-      //relative support
-      return path.resolve(folder_path)
-    })
-    .then(function (abs_folder_path) {
-      return bash('mkdir -p ' + abs_folder_path)
-    })
+    var result = shell.mkdir('-p', folder_path);
+    if (result.code) {
+      throw result
+    }
+  })
 }
 
 /**
