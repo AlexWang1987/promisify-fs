@@ -169,7 +169,7 @@ pfs.cloneFolder = function (source_folder, dest_folder, force) {
     var result = shell.cp('-r' + (force ? 'f' : 'n'), source_folder, dest_folder);
     if (result.code) {
       //Throw result
-      console.log('This bug still exists, but the task is done.');
+      console.log('cp shelljs bug still exists, whereas the task is done.');
     }
   })
 }
