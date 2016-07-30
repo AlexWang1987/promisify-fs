@@ -237,10 +237,6 @@ pfs.getModule = function (module_abs_path) {
   var childModule = module.children.filter(function (module) {
     return module.id.indexOf(module_abs_path) === 0;
   })[0];
-  //removeChildModule
-  if (childModule) {
-    module.children.splice(module.children.indexOf(childModule), 1);
-    return childModule;
-  }
+  return childModule;
 }
 
